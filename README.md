@@ -1,5 +1,7 @@
 # netpage
 
+# Must Use yarn
+
 ## Project setup
 ```
 yarn install
@@ -7,7 +9,7 @@ yarn install
 
 ### Compiles and hot-reloads for development
 ```
-yarn run serve
+yarn run dev
 ```
 
 ### Compiles and minifies for production
@@ -27,3 +29,11 @@ yarn run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Plug
+* vue-router
+* element-ui
+* vuex
+* axios
+* less
+
