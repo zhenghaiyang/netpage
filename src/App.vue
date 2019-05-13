@@ -1,8 +1,9 @@
 <template>
   <div class="app">
     <div class="app-button">
-      <el-button @click="click"/>
+      <el-button @click="onclick"/>
     </div>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -22,9 +23,11 @@ export default {
     ...mapState("test",["userInfo"])
   },
   methods: {
-    click() {
-      console.log("this",this.api)
-      console.log("ssssss",this.userInfo)
+    onclick() {
+      let param = {}
+      //this.request(this.api.getNewList,param,"post").then((res)=>{console.log("res",res)})
+      this.$router.push({path:"/user"})
+      // console.log("dasda",this)
     }
   },
 }
