@@ -1,6 +1,19 @@
-const baesUrl= "https://www.easy-mock.com/mock/5cd90b97c6690f660b93bd51/example"
-const api= {
+
+import {
+    prodHost
+} from './host.js'
+
+console.log("base_url", prodHost)
+
+
+const api = {
     // 获取新闻
-    getNewList: baesUrl+"/login"
+    getNewList: prodHost + "/login/login-password"
 }
+
+
+
+
+
+
 export default api;

@@ -6,30 +6,18 @@
 </template>
 
 <script lang="js">
-import {mapActions,mapState,mapMutations} from 'vuex';
 export default {
-  data(){
-    return {
-      
-    }
-  },
-  mounted() {
-    console.log("dasdasd")
-  },
-  computed: {
-    ...mapState("test",["userInfo"])
-  },
-  methods: {
-    onclick() {
-      let param = {}
-      //this.request(this.api.getNewList,param,"post").then((res)=>{console.log("res",res)})
-      this.$router.push({path:"/user"})
-      // console.log("dasda",this)
-    }
-  },
+
 }
 </script>
 
 <style lang="less">
-
+.app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 </style>
