@@ -9,26 +9,35 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "core-js": "^2.6.5",
     "element-ui": "^2.8.2",
     "less": "^3.9.0",
     "less-loader": "^5.0.0",
     "sass-loader": "^7.1.0",
     "vue": "^2.6.10",
     "vue-router": "^3.0.6",
-    "vuex": "^3.1.1"
+    "vuex": "^3.1.1",
+    "store": "^2.0.12",
+    "core-js": "^3.1.2",
+    "ramda.clone": "^0.26.1",
+    "@ant-design-vue/pro-layout": "^0.3.2",
+    "@antv/data-set": "^0.10.2",
+    "ant-design-vue": "^1.6.2"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.7.0",
-    "@vue/cli-plugin-eslint": "^3.7.0",
-    "@vue/cli-service": "^3.7.0",
+    "@vue/cli-plugin-babel": "^4.0.4",
+    "@vue/cli-plugin-eslint": "^4.0.4",
+    "@vue/cli-plugin-router": "^4.0.4",
+    "@vue/cli-plugin-unit-jest": "^4.0.4",
+    "@vue/cli-plugin-vuex": "^4.0.4",
+    "@vue/cli-service": "^4.0.4",
     "babel-eslint": "^10.0.1",
+    "compression-webpack-plugin": "^7.1.2",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "vue-template-compiler": "^2.5.21"
   },
   "eslintConfig": {
-    "root": true,
+    "root": false,
     "env": {
       "node": true
     },
@@ -36,7 +45,9 @@
       "plugin:vue/essential",
       "eslint:recommended"
     ],
-    "rules": {},
+    "rules": {
+      "no-console": "off"
+    },
     "parserOptions": {
       "parser": "babel-eslint"
     }
